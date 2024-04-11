@@ -73,8 +73,8 @@ input {
 }
 .Search {
     position: absolute;
-    top: 20%; 
-    left: 73%; 
+    top: 25%; 
+    left: 84%; 
 
 }
 .fa {
@@ -312,7 +312,7 @@ p {
 
 .name {
     color: green;
-    font-weight: bold; 
+
     margin-bottom: 10px; 
     text-align: center;
     font-size: 20px; 
