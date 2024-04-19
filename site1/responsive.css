@@ -1,0 +1,145 @@
+@media screen and (min-width: 1920px) {
+    @media screen and (max-width: 480px) {
+        .header .col-xs-3 {
+            width: 33.33%;
+        }
+
+        .Search {
+            margin-top: 10px;
+            float: right;
+        }
+
+        .Search input[type="search"] {
+            width: 100px;
+            float: left;
+        }
+
+        .menu {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .middle1 img {
+            width: 100%;
+        }
+
+        .mod-custom.custom .top-six ul li {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .mod-custom.custom .home-big .row {
+            display: block;
+        }
+
+        .mod-custom.custom .home-big .row .col-xs-6 {
+            width: 100%;
+            float: none;
+        }
+
+        .categories .cat {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .footer #bottom-menu {
+            float: none;
+            width: 100%;
+            margin-top: 2px;
+            text-align: center;
+        }
+
+        .footer #bottom-menu .icon {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header .col-xs-3 {
+        width: 50%;
+    }
+
+    .menu {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .Search {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .Search input[type="search"] {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    .middle1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer #bottom-menu {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .footer #bottom-menu .icon {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .header .col-xs-3 {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header .col-xs-3 {
+        width: 50%;
+    }
+    .menu, .Search {
+        float: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .menu li, .categories .cat {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .Search input[type="search"] {
+        width: 70%;
+        max-width: 200px;
+    }
+    .middle1 img, .mod-custom.custom .home-big .row .col-xs-6 {
+        width: 100%;
+        height: auto;
+    }
+    .mod-custom.custom .top-six ul li {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .footer #bottom-menu {
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .footer #bottom-menu .icon {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
