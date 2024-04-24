@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body class="sad">
+    <header class="header2">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-xs-3 npl" id="logo">
+                    <div> 
+                        <img src="images/logo.png">
+                    </div>      
+                </div>
+                <div class="Search">
+                    <form action="">
+                        <input type="search">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <div class="col-xs-3 npr">
+                    <div id="menu"> 
+                        <div class="clear"></div>
+                        <ul class="nav menu">
+                            <a href="site1/index.html"><li class="item-101 ">Home</li></a>
+                            <li class="item-167">Company profile</li>
+                            <a href="site2/index.html"><li class="item-196 ">Products</li></a>
+                            <li class="item-209 ">Services</li>
+                            <li class="item-209 ">R&D</li>
+                            <a href="index.html"><li class="item-111">Contact</li></a>
+                        </ul>
+                    </div>
+                </div>  
+            </div>  
+        </div>  
+    </header>
+
+    <div class="middle1"> 
+        <img src="js/img/Mizhnarodnyy-den-soniashnyka.jpg" style="width: 1950px; height: 800px;">       
+    </div>
+
+
+
+
+
+
+<div class="categories2">
+  <div class="title2">My favorite sunflowers</div>
+  <div>
+    <img src="images/Union.png">
+  </div>
+  <div>
+    <p class="p">Agridera aims to be one of the world's leading companies in the breeding, production, and marketing of tomato seeds.<b> We invest intensively in research and development to provide solutions to growers and consumers in numerous countries around the world.</b>
+      In particular, we breed improved disease-resistant cultivars adapted to different markets globally.
+      <br><br><br>
+      Currently, emphasis is placed on combining Tomato Yellow Leaf Curl Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances with other soil borne diseases into superior tomato breeding lines and hybrids. Moreover, comprehensive efforts are being undertaken to develop varieties resistance to TBRFV virus (Tomato Brown Rugose Fruit Virus).
+      <br><br><br>
+      In terms of horticultural traits, breeding is for earliness, different fruit sizes, firmness, red fruit color, flavor, crack resistance, shelf life, and high/low temperature fruit set. Combinations of quality features and disease resistance are sought in a variety of types, namely round and elongated shapes.
+    </p>
+    <div>
+      <p class="special-paragraph">Agirdera Tomato breeding programs are focusing on three main segments: Greenhouse Indeterminate Tomatoes, Open-field Indeterminate Tomatoes, and Bush Type Open-field Tomatoes</p>
+    </div>
+  </div>
+<div class="wrapper2">
+  <div>
+    <h3 class="program-title">Greenhouse Tomato Breeding Program</h3>
+    <p class="program-text">
+      <b>This breeding is aimed for the Spanish and Turkish markets.</b> For single and cluster picks, round fruit shape and resistances of TYLCV, TSWV, Nematodes and FORL (Fusarium oxysporum f.sp. radicis-lycopersici). Some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).
+    </p>
+  </div>
+  <div>
+    <h3 class="program-title">Open-field Indeterminate Tomatoes</h3>
+    <p class="program-text">
+      <b>This breeding is for Brazilian, Moroccan, and Turkish markets.</b> The main focus is on large round shape fruits (200 grams plus); and resistances of TYLCV, TSWV, Nematodes and FORL. In the near future, F3 (Fusarium oxysporum f.sp. lycopersici) will be included as basic resistance in our cultivars.
+    </p>
+  </div>
+  <div>
+    <h3 class="program-title">Open-field Bush Type Tomatoes</h3>
+    <p class="program-text">
+      <b>This breeding is for Mediterranean markets.</b> We breed round and elongated shapes, standard sizes (140- 180 grams), and beef sizes (min. 180 grams up to 300 grams and more). We combine the resistances of TYLCV, TSWV and Nematodes as basic resistances in our hybrids. However, some hybrids may include more resistances, such as Cladosporium and Leveillula Taurica (Lv).
+    </p>
+  </div>
+</div>
+<div>
+        <div>
+      <p class="special-paragraph">Agridera operates through international and local distributers around the world. </p>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="tomatosList col-md-12" id="article">
+
+  <div class="row">
+
+    <div class="tomatoItem col-md-4"  v-for="p in products">
+
+      <div class="col-md-12">
+
+        <div class="tomatoImg">
+
+          <img :src="p.image" alt="products[0].image">
+
+        </div>
+
+        <div class="tomatoInfo">
+            <a href="tomato_one.html#{{ product.id }}">Купити</a>
+
+          <b style="font-size:20px; line-height: 28px;">{{ p.title }}</b>
+
+          <br>
+
+          flower
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="wrapper">       
+                <div class="col-xs-12 npl" id="bottom-menu">
+                    <div class="clear"></div>
+                    <ul class="nav menu">
+                        <li class="item-201">Profile</li>
+                        <li class="item-202">Management</li>
+                        <li class="item-206">Products</li>
+                        <li class="item-207">R&D</li>
+                        <li class="item-204">Links</li>
+                        <li class="item-203">Sitemap</li>
+                        <li class="item-208">Contact</li>
+                    </ul>
+
+                    <ul class="icon">
+                        <li><img src="images/Ico_in.png" alt="in"></li>
+                        <li><img src="images/Ico_inst.png" alt="inst"></li>
+                        <li><img src="images/Ico_tube.png" alt="tube"></li>
+                        <li><img src="images/Ico_tw.png" alt="tw"></li>
+                        <li><img src="images/Ico_fb.png" alt="fb"></li>  
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <div class="fotter-credit">
+            AGRIDERA SEEDS & AGRICULTURE LTD. © 2020
+        </div>  
+
+    </footer>
+<script>
+var app = new Vue({
+    el: "#article",
+    data: {
+        products: [
+            { id: 1, title: "Sunflower1", shortText: "Соняшник1", image: "img/45.jpg", desc: "Full desc" },
+            { id: 2, title: "Sunflower2", shortText: "Соняшник2", image: "img/DSC_9707.jpg", desc: "Full desc" },
+            { id: 3, title: "Sunflower3", shortText: "Соняшник3", image: "img/images.jpg", desc: "Full desc" },
+            { id: 4, title: "Sunflower4", shortText: "Соняшник4", image: "img/large_D372B0D9-3DA3-4E6C-BC3F-625962855D9D.jpg", desc: "Full desc" },
+            { id: 5, title: "Sunflower5", shortText: "Соняшник5", image: "img/large_ф3.jpg", desc: "Full desc" }
+        ]
+    },
+    mounted: function() {
+        console.log(window.localStorage.getItem('prod'));
+        this.getProduct(); 
+    },
+    methods: {
+        addItem: function(id) {
+            window.localStorage.setItem('prod', id);
+        },
+        getProduct: function() {
+            if (window.location.hash) {
+                var id = window.location.hash.replace('#', '');
+                if (this.products && this.products.length > 0) {
+                    for (i in this.products) {
+                        if (this.products[i] && this.products[i].id && id==this.products[i].id) {
+                            this.product = this.products[i];
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+</script>
+
+
+</body>
+</html>
