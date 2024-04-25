@@ -1,0 +1,42 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    .Search {
+        margin-top: 20px;
+    }
+
+    .Search form {
+        text-align: left;
+    }
+
+    .Search input[type="search"] {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .Search i {
+        position: left;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .niz2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .niz3 {
+        margin-top: 20px;
+    }
+
+    .niz3 ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .niz3 ul li {
+        margin-bottom: 10px;
+    }
+}
+
